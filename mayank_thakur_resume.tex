@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -90,68 +90,76 @@
 \end{center}
 
 
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {The University of Texas at Austin}{Remote}
-      {Masters of Science - Computer Science}{2022 -- 2025}
-    \resumeSubheading
-      {PES University, Bangalore}{Bangalore, India}
-      {Bachelor of Technology - Computer Science;}{2016 -- 2020}
-  \resumeSubHeadingListEnd
-
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Akamai Technologies}{Bangalore, India (Remote)}
       {Senior II Software Engineer}{Apr 2025 - Present}
       \resumeItemListStart
-        \item Designed and delivered performant backend components at scale.
-        \item Led system-wide initiatives improving latency and reliability.
+        \item Built and maintained control path components for FedRAMP compliance in the Zero Trust product.
+        \item Took ownership of the Agile process as Scrum Master; led sprints, ceremonies, and release cycles.
+        \item Mentored junior engineers and led hiring efforts.
       \resumeItemListEnd
+
 
     \resumeSubheadingContinue
       {Senior Software Engineer}{Dec 2023 - Mar 2025}
       \resumeItemListStart
-        \item Owned authentication systems, improved uptime from 99.9\% to 99.99\%.
-        \item Mentored junior engineers and led hiring efforts.
+        \item Designed and developed the capability to rotate multiple secrets, certificates and keys throughout the system.
+        \item Integrated OIDC-based SSO into the internal Operations Portal.
+        \item \textit{Tech Stack: Go, Python, Django, Celery, PostgreSQL, Redis, RMQ, Kubernetes}
       \resumeItemListEnd
 
     \resumeSubheading
       {Supertokens}{Mumbai, India (Remote)}
       {Backend Engineer}{Sep 2023 - Dec 2023}
       \resumeItemListStart
-        \item Rewrote core services in idiomatic Go, reducing latency by 40\%.
-        \item Implemented OIDC integrations and multi-tenant auth flows.
+        \item Developed production-grade APIs and cron jobs in SaaS backend (Node.js).
+        \item Maintained and improved open-source Python and Go SDKs.
+        \item \textit{Tech Stack: Go, Python, MySQL, NodeJS}
       \resumeItemListEnd
 
     \resumeSubheading
       {Pronto}{Bangalore, India (Remote)}
       {Senior Software Engineer}{Apr 2022 - Sep 2023}
       \resumeItemListStart
-        \item Built internal platform tools using Go, PostgreSQL, and Kubernetes.
-        \item Helped scale microservices to support 10x user growth.
+        \item Designed and shipped Pronto’s Identity Provider with OAuth, SAML, and MFA support.
+        \item Implemented custom domain support for SAML authentication.
+        \item Improved logging, tracing, and overall system observability.
+        \item Hardened Kubernetes security by enabling mTLS with a service mesh.
+        \item \textit{Tech Stack: Go, Python, FastAPI, Celery, PostgreSQL, Kubernetes}
       \resumeItemListEnd
 
     \resumeSubheading
       {Akamai Technologies}{Bangalore, India (Remote)}
       {Software Engineer II}{Nov 2021 - Apr 2022}
       \resumeItemListStart
-        \item Maintained and optimized legacy services during Akamai’s acquisition integration.
-        \item Migrated critical pipelines to a microservices architecture.
+        \item Developed a fully RFC compliant SCIM server in Go for Okta and Azure AD integration.
+        \item Enabled secure service access to RDS via AWS IAM role-based auth.
       \resumeItemListEnd
 
     \resumeSubheadingContinue
       {Software Engineer}{Jan 2020 - Oct 2021}
       \resumeItemListStart
-        \item Developed distributed caching layers improving throughput by 25\%.
-        \item Contributed to internal tooling for security and access management.
+        \item Boosted test coverage with robust Python unittests across backend services.
+        \item Developed backend APIs in django and worked on customer bug fixes
+        \item \textit{Tech Stack: Go, Python, Django, Celery, PostgreSQL, Redis}
       \resumeItemListEnd
 
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at Austin}{Remote}
+      {Master of Science - Computer Science}{2022 -- 2025}
+    \resumeSubheading
+      {PES University, Bangalore}{Bangalore, India}
+      {Bachelor of Technology - Computer Science}{2016 -- 2020}
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------------
@@ -165,8 +173,6 @@
 
 %-----------INTERESTS-----------------
 \section{Interests}
-  \resumeSubHeadingListStart
-    \item I enjoy and participate in a lot of sports, from racing marathons and Ironman triathlons to adventure sports like paragliding, scuba diving, rock climbing, and climbing big mountains in the Himalayas.
-  \resumeSubHeadingListEnd
+    I enjoy and participate in a lot of sports, from racing marathons and Ironman triathlons to adventure sports like paragliding, scuba diving, rock climbing, and climbing big mountains in the Himalayas.
 
 \end{document}
