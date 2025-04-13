@@ -1,0 +1,172 @@
+%-------------------------
+% Resume in Latex
+% Author : Mayank Thakur
+% Website: https://github.com/IamMayankThakur/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{microtype} % for better font spacing
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\item\small{#1: #2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.5em]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%%  Resume STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\Huge \textbf{\scshape Mayank Thakur}}\\[4pt]
+  {\normalsize
+  \faEnvelope\ \href{mailto:thakurmayank88@gmail.com}{thakurmayank88@gmail.com} \,|\, 
+  \faPhone\ +91 9611296430 \,|\, 
+  \faLinkedin\ \href{https://linkedin.com/in/iammayankthakur}{iammayankthakur} \,|\, 
+  \faGithub\ \href{https://github.com/IamMayankThakur}{IamMayankThakur}
+  }
+\end{center}
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at Austin}{Remote}
+      {Masters of Science - Computer Science}{2022 -- 2025}
+    \resumeSubheading
+      {PES University, Bangalore}{Bangalore, India}
+      {Bachelor of Technology - Computer Science;}{2016 -- 2020}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Akamai Technologies}{Bangalore, India (Remote)}
+      {Senior II Software Engineer}{Apr 2025 - Present}
+      \resumeItemListStart
+        \item Designed and delivered performant backend components at scale.
+        \item Led system-wide initiatives improving latency and reliability.
+      \resumeItemListEnd
+
+    \resumeSubheadingContinue
+      {Senior Software Engineer}{Dec 2023 - Mar 2025}
+      \resumeItemListStart
+        \item Owned authentication systems, improved uptime from 99.9\% to 99.99\%.
+        \item Mentored junior engineers and led hiring efforts.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Supertokens}{Mumbai, India (Remote)}
+      {Backend Engineer}{Sep 2023 - Dec 2023}
+      \resumeItemListStart
+        \item Rewrote core services in idiomatic Go, reducing latency by 40\%.
+        \item Implemented OIDC integrations and multi-tenant auth flows.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Pronto}{Bangalore, India (Remote)}
+      {Senior Software Engineer}{Apr 2022 - Sep 2023}
+      \resumeItemListStart
+        \item Built internal platform tools using Go, PostgreSQL, and Kubernetes.
+        \item Helped scale microservices to support 10x user growth.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Akamai Technologies}{Bangalore, India (Remote)}
+      {Software Engineer II}{Nov 2021 - Apr 2022}
+      \resumeItemListStart
+        \item Maintained and optimized legacy services during Akamai’s acquisition integration.
+        \item Migrated critical pipelines to a microservices architecture.
+      \resumeItemListEnd
+
+    \resumeSubheadingContinue
+      {Software Engineer}{Jan 2020 - Oct 2021}
+      \resumeItemListStart
+        \item Developed distributed caching layers improving throughput by 25\%.
+        \item Contributed to internal tooling for security and access management.
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item \textbf{Languages}{: Python, Go, SQL, Javascript}
+   \item \textbf{Frameworks}{: Django, DRF, FastAPI, Celery, Chi, Mux, pgx}
+   \item \textbf{Technologies}{: AWS, Redis, PostgreSQL, Kubernetes, Docker}
+   \item \textbf{Expertise}{: REST APIs, Microservices, Authentication/Authorization, Cryptography, Unit testing, Identity and Access Management, Distributed Systems, System Design, Code Reviews}
+ \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------------
+\section{Interests}
+  \resumeSubHeadingListStart
+    \item I enjoy and participate in a lot of sports, from racing marathons and Ironman triathlons to adventure sports like paragliding, scuba diving, rock climbing, and climbing big mountains in the Himalayas.
+  \resumeSubHeadingListEnd
+
+\end{document}
